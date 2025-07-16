@@ -5,6 +5,7 @@ import {
   ComponentOne,
   ComponentTwo,
   ComponentThree,
+  BulkerComponent,
 } from './components';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div>
       <h1>Zustand Example</h1>
       <Updater />
+      <BulkerComponent />
       <ComponentOne>
         <ComponentTwo>
           <ComponentThree>
