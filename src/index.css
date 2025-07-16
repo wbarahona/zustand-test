@@ -3,9 +3,18 @@
 .component-three,
 .bulker-component,
 .consumer,
-.updater {
+.updater,
+.form {
   padding: 10px;
   border: 1px solid #ccc;
   margin: 10px 0;
   border-radius: 5px;
+}
+.input,
+.textarea {
+  display: block;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }

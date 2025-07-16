@@ -1,10 +1,12 @@
 import { useGlobalStore } from '../store';
 
+export interface IComponentTwoProps {
+  children?: React.ReactNode;
+}
+
 export default function ComponentTwo({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: IComponentTwoProps): React.ReactElement<IComponentTwoProps> {
   const count = useGlobalStore((state) => state.count);
 
   return (

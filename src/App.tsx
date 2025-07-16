@@ -6,6 +6,7 @@ import {
   ComponentTwo,
   ComponentThree,
   BulkerComponent,
+  Form,
 } from './components';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           </ComponentThree>
         </ComponentTwo>
       </ComponentOne>
+      <Form />
     </div>
   );
 }
