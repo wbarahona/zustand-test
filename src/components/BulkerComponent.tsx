@@ -14,7 +14,7 @@ export default function BulkerComponent() {
       <button className="button" onClick={handleBulkAdd}>
         Bulk Add Values
       </button>
-      <button className="button" onClick={reset}>
+      <button className="button reset" onClick={reset}>
         Reset State
       </button>
     </div>
