@@ -11,8 +11,12 @@ export default function BulkerComponent() {
   return (
     <div className="bulker-component">
       <h1>Current Count: {count}</h1>
-      <button onClick={handleBulkAdd}>Bulk Add Values</button>
-      <button onClick={reset}>Reset State</button>
+      <button className="button" onClick={handleBulkAdd}>
+        Bulk Add Values
+      </button>
+      <button className="button" onClick={reset}>
+        Reset State
+      </button>
     </div>
   );
 }

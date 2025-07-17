@@ -16,8 +16,13 @@ export default function Updater() {
   return (
     <div className="updater">
       <h2>Updater Component</h2>
-      <button onClick={handleDecrease}>-</button> {count}{' '}
-      <button onClick={handleIncrement}>+</button>
+      <button className="button" onClick={handleDecrease}>
+        -
+      </button>
+      <span className="center count">{count}</span>
+      <button className="button" onClick={handleIncrement}>
+        +
+      </button>
     </div>
   );
 }
