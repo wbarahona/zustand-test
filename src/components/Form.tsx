@@ -111,7 +111,7 @@ export const Form: React.FC = () => {
           <div>
             <h3>Saved Education:</h3>
             {form.educationHistory.map((edu) => (
-              <div key={edu.id}>
+              <div key={edu.id} className="education-entry">
                 <div>
                   <span>
                     {edu.institution} - {edu.degree}{' '}
@@ -120,9 +120,9 @@ export const Form: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => removeEducation(edu.id)}
-                    className="button"
+                    className="button remove floating-right"
                   >
-                    Remove
+                    &times;
                   </button>
                 </div>
                 <div>
@@ -166,7 +166,7 @@ export const Form: React.FC = () => {
         )}
 
         {/* Add New Education */}
-        <div>
+        <div className="education-block">
           <h3>Add New Education</h3>
           <div>
             <div>
